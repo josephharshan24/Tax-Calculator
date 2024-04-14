@@ -9,4 +9,3 @@ This is a simple tax calculator web application.
 ```bash
 git clone https://github.com/josephharshan24/Tax-Calculator.git
 
-
