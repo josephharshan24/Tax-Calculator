@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tax Calculator</h1>
+        <form id="taxForm">
+            <div class="form-group">
+                <label for="income" data-tooltip="Gross Annual Income is your total salary in a year">Enter Gross Annual Income:</label>
+                <div class="input-container">
+                    <input type="text" id="income" name="income" required>
+                    <span class="error-icon" data-tooltip="Please enter numbers only">!</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="extraIncome" data-tooltip="Any additional income earned outside your primary source">Enter Extra Income:</label>
+                <div class="input-container">
+                    <input type="text" id="extraIncome" name="extraIncome">
+                    <span class="error-icon" data-tooltip="Please enter numbers only">!</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="deductions" data-tooltip="The total amount of deductions applicable to your income">Enter Total Applicable Deductions:</label>
+                <div class="input-container">
+                    <input type="text" id="deductions" name="deductions">
+                    <span class="error-icon" data-tooltip="Please enter numbers only">!</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="age" data-tooltip="Select your age group to determine the applicable tax rate">Enter Age Group:</label>
+                <select id="age" name="age" required>
+                    <option value="" disabled selected>Select Age Group</option>
+                    <option value="<40">&lt; 40</option>
+                    <option value=">=40&<60">&ge; 40 &lt; 60</option>
+                    <option value=">=60">&ge; 60</option>
+                </select>
+                <span class="error-icon" data-tooltip="Please select an age group">!</span>
+            </div>
+            <button type="submit">Calculate Tax</button>
+        </form>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tax Calculation Result</h2>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
