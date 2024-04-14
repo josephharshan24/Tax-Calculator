@@ -25,5 +25,6 @@ This is a simple tax calculator web application.
 
 Contributions are welcome! If you'd like to contribute, please fork this repository and create a pull request with your changes. Be sure to follow our [contribution guidelines](CONTRIBUTING.md).
 
-![Image Alt Text](image_url)
+## Test Cases 
+![Image Alt Text](tax.png)
 
