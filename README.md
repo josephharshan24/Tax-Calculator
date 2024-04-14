@@ -26,5 +26,5 @@ This is a simple tax calculator web application.
 Contributions are welcome! If you'd like to contribute, please fork this repository and create a pull request with your changes. Be sure to follow our [contribution guidelines](CONTRIBUTING.md).
 
 ## Test Cases 
-Hovering over (?)symbol show the detail about the heading in tooltip !(tax1.png)
+Hovering over (?)symbol show the detail about the heading in tooltip ![Image Alt Text](tax1.png)
 
